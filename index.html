@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Maquetación de una pagina web para avianca airlines corporate"/>
+    <meta name="keywords" content="avianca, airlines, web"/>
+    <meta name="author" content="Yohn Sebastian Ramírez Silva" />
+    <meta name="copyright" content="Avianca Airlines Coporate" />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Avianca Airlines Corporate</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Navbar  -->
+        <header class="header">
+            <nav class="header__nav">
+                <div class="header__nav--logo">
+                    <a href="#" class="header__nav--logo-link">
+                        <img src="./assets/images/Logo.svg" alt="Avianca Airlines Coporate">
+                    </a>
+                </div>
+                <div class="header__nav--menu-btn hide">
+                    <a href=""><img src="./assets/images/menu.svg" alt="menu hamburger"></a>
+                </div>
+                <ul class="header__nav--menu show">
+                    <li class="header__nav--menu-item">
+                        <a href="#" class="header__nav--menu-item-link">El programa</a>
+                    </li>
+                    <li class="header__nav--menu-item">
+                        <a href="#" class="header__nav--menu-item-link">Inscripción</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Banner -->
+            <div class="header__banner">
+                <div class="header__banner--caption">
+                    <h1 class="header__banner--caption-title">Volamos para que tú puedas volar.</h1>
+                    <p class="header__banner--caption-text">Avianca Corporate organiza todo lo que necesitas para tu viaje.</p>
+                    <button class="btn--red">Participa en la rifa</button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+
+        <!-- Form -->
+        <main class="main">
+             <form action="#" class="main__form">
+
+                <div class="main__form--group">
+                    <h3 class="main__form--group-title">Busca tu vuelo</h3>
+
+                    <div class="main__form--group-inputs">
+                            <div class="main__form--group-inputs-item">
+                                <input class="main__form--group-inputs-item-radio" type="radio" name="idaregreso" id="idaregreso" checked>
+                                <label for="idaregreso">Ida y Regreso</label>
+                            </div>
+                            <div class="main__form--group-inputs-item">
+                                <input class="main__form--group-inputs-item-radio" type="radio" name="soloida" id="soloida">
+                                <label for="soloida">Solo ida</label>
+                            </div>
+                            <div class="main__form--group-inputs-item">
+                                <input class="main__form--group-inputs-item-radio" type="radio" name="variasciudades" id="variasciudades">
+                                <label for="variasciudades">Varias ciudades</label>
+                            </div>
+                    </div>
+
+                    <div class="main__form--group-grid">
+                            <div class="main__form--group-destinos">
+                                <div class="main_form--group-destinos-inputs grid--a">
+                                    <label class="main__form--group-subtitle">Desde</label>
+                                    <br>
+                                    <input class="main_form--group--inputs-item" type="text" value="Bogotá D.C. (BOG)">
+                                </div>
+                                <a href="#" class="btn-swap grid--b">
+                                    <span><img src="./assets/images/arrow.svg" alt="arrow"></span>
+                                    <span><img src="./assets/images/arrow.svg" alt="arrow"></span>
+                                </a>
+                                <div class="main_form--group-destinos-inputs grid--c">
+                                    <span class="main__form--group-subtitle">Hasta</span>
+                                    <br>
+                                    <input class="main_form--group--inputs-item" type="text" value="Dallas (DFW)">
+                                </div>
+                                <div class="main_form--group-destinos-inputs grid--d">
+                                    <span class="main__form--group-subtitle">Pasajeros y Clase</span>
+                                    <br>
+                                    <input class="main_form--group--inputs-item" type="text" value="1 adulto, económica.">
+                                </div>
+                            </div>
+    
+                            <div class="main__form--group-fechas">
+                                <div class="main_form--group-fechas-date grid--e">
+                                    <span class="main__form--group-subtitle">Fecha de Salida</span>
+                                    <br>
+                                    <input class="main_form--group--inputs-item" type="date" value="2021-03-16">
+                                </div>
+                                <a href="#" class="btn-swap grid--f">
+                                    <span><img src="./assets/images/arrow.svg" alt="arrow"></span>
+                                    <span><img src="./assets/images/arrow.svg" alt="arrow"></span>
+                                </a>
+                                <div class="main_form--group-destinos-date grid--g">
+                                    <span class="main__form--group-subtitle">Fecha de Regreso</span>
+                                    <br>
+                                    <input class="main_form--group--inputs-item" type="date" value="2021-04-14">
+                                </div>
+                                <div class="main_form--group-destinos-codigo grid--h">
+                                    <a href="#" class="main_form--group-destinos-codigo-link">
+                                        <span><img src="./assets/images/plus.png" alt="plus"> </span>
+                                        <span>Tengo un código promocional</span> 
+                                    </a>
+                                </div>
+                            </div>
+                    </div>
+
+                    <div class="main__form--group-btn">
+                            <button class="btn--red btn--form">Busca tu vuelo</button>
+                    </div>
+                </div>
+            </form>
+
+                <!-- Section 1: Cards -->
+                <section class="main__sec-1">
+                    <h2 class="main__sec-1--title">Recomendaciones para ti</h2>
+                    <a href="#" class="main__sec1--subtitle">Configura tus recomendaciones <span>
+                        <img src="./assets/images/arrow-2.svg" alt="arrow"></span></a>
+
+                    <div class="main__sec1--gallery">
+                        <div class="main__sec1--gallery-card">
+                            <div class="main__sec1--gallery-card-header-1"></div>
+                            <div class="main__sec1--gallery-card-content">
+                                <div class="main__sec1--gallery-card-content-fromto">
+                                    <div class="main__sec1--gallery-card-content-fromto-origen">
+                                        <span class="city">Bogotá</span>
+                                        <br>
+                                        <span class="sub">BOG</span>
+                                    </div>
+                                    <div class="main__sec1--gallery-card-content-fromto-arrow">
+                                        <span><img class="arrow" src="./assets/images/arrow-gray.svg" alt="arrow"></span>
+                                        <span><img src="./assets/images/arrow-gray.svg" alt="arrow"></span>
+                                    </div>
+                                    <div class="main__sec1--gallery-card-content-fromto-destino">
+                                        <span class="city">Nueva York</span>
+                                        <br>
+                                        <span class="sub">JKF</span>
+                                    </div>
+                                </div>
+                                <div class="main__sec1--gallery-card-content-info">
+                                    <div class="main__sec1--gallery-card-content-info-precio">
+                                        <span>Desde:</span>
+                                        <br>
+                                        <h3>$879, 890 <span>COP</span></h3>
+                                    </div>
+                                    <div class="main__sec1--gallery-card-content-info-desc">
+                                        <span>
+                                            <img src="./assets/images/airplane.svg" alt="airplane">
+                                        </span>
+                                        <p>
+                                            Directo | Jun. 12 - Jun. 24 | 12 días
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="main__sec1--gallery-card-info-btn">
+                                <button class="btn--red">Buscar vuelos</button>
+                            </div>
+                        </div>
+
+                        <div class="main__sec1--gallery-card">
+                            <div class="main__sec1--gallery-card-header-2"></div>
+                            <div class="main__sec1--gallery-card-content">
+                                <div class="main__sec1--gallery-card-content-fromto">
+                                    <div class="main__sec1--gallery-card-content-fromto-origen">
+                                        <span class="city">Bogotá</span>
+                                        <br>
+                                        <span class="sub">BOG</span>
+                                    </div>
+                                    <div class="main__sec1--gallery-card-content-fromto-arrow">
+                                        <span><img class="arrow" src="./assets/images/arrow-gray.svg" alt="arrow"></span>
+                                        <span><img src="./assets/images/arrow-gray.svg" alt="arrow"></span>
+                                    </div>
+                                    <div class="main__sec1--gallery-card-content-fromto-destino">
+                                        <span class="city">Sao Paulo</span>
+                                        <br>
+                                        <span class="sub">GRU</span>
+                                    </div>
+                                </div>
+                                <div class="main__sec1--gallery-card-content-info">
+                                    <div class="main__sec1--gallery-card-content-info-precio">
+                                        <span>Desde:</span>
+                                        <br>
+                                        <h3>$929, 390 <span>COP</span></h3>
+                                    </div>
+                                    <div class="main__sec1--gallery-card-content-info-desc">
+                                        <span>
+                                            <img src="./assets/images/airplane.svg" alt="airplane">
+                                        </span>
+                                        <p>
+                                            1 Escala | Jun. 12 - Jun. 24 | 12 días
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="main__sec1--gallery-card-info-btn">
+                                <button class="btn--red">Buscar vuelos</button>
+                            </div>
+                        </div>
+
+                        <div class="main__sec1--gallery-card">
+                            <div class="main__sec1--gallery-card-header-3"></div>
+                            <div class="main__sec1--gallery-card-content">
+                                <div class="main__sec1--gallery-card-content-fromto">
+                                    <div class="main__sec1--gallery-card-content-fromto-origen">
+                                        <span class="city">Bogotá</span>
+                                        <br>
+                                        <span class="sub">BOG</span>
+                                    </div>
+                                    <div class="main__sec1--gallery-card-content-fromto-arrow">
+                                        <span><img class="arrow" src="./assets/images/arrow-gray.svg" alt="arrow"></span>
+                                        <span><img src="./assets/images/arrow-gray.svg" alt="arrow"></span>
+                                    </div>
+                                    <div class="main__sec1--gallery-card-content-fromto-destino">
+                                        <span class="city">Santiago</span>
+                                        <br>
+                                        <span class="sub">SCL</span>
+                                    </div>
+                                </div>
+                                <div class="main__sec1--gallery-card-content-info">
+                                    <div class="main__sec1--gallery-card-content-info-precio">
+                                        <span>Desde:</span>
+                                        <br>
+                                        <h3>$799, 490 <span>COP</span></h3>
+                                    </div>
+                                    <div class="main__sec1--gallery-card-content-info-desc">
+                                        <span>
+                                            <img src="./assets/images/airplane.svg" alt="airplane">
+                                        </span>
+                                        <p>
+                                            Directo | Jun. 12 - Jun. 24 | 12 días
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="main__sec1--gallery-card-info-btn">
+                                <button class="btn--red">Buscar vuelos</button>
+                            </div>
+                        </div>
+                    </div>
+                 </section>
+
+                 <!-- Section 2: Accesos Directos -->
+                <section class="main__sec-2">
+                    <h2 class="main__sec-2--title">Accesos directos</h2>
+
+                    <div class="main__sec-2--grid">
+                        <div class="main__sec-2--accesos">
+                            <div class="main__sec-2--accesos-header">
+                                <div class="main__sec-2--accesos-header-icon">
+                                    <span><img src="./assets/images/avion.svg" alt="avion"></span>
+                                </div>
+                                <div class="main__sec-2--accesos-header-title">
+                                    <h3>Conozca sobre el programa</h3>
+                                </div>
+                            </div>
+                            <div class="main__sec-2--accesos-info">
+                                <p class="main__sec-2--accesos-info-text">
+                                    Avianca Corporate ofrece beneficios y precios especiales para empresas con viajes frecuentes. 
+                                </p>
+                                
+                                <div class="main__sec-2--accesos-info-link">
+                                    <a href="#">Más sobre el programa 
+                                        <span><img src="./assets/images/arrow-2.svg" alt="arrow"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="line"></div>
+
+                        <div class="main__sec-2--accesos">
+                            <div class="main__sec-2--accesos-header">
+                                <div class="main__sec-2--accesos-header-icon">
+                                    <span><img src="./assets/images/lupa.svg" alt="lupa"></span>
+                                </div>
+                                <div class="main__sec-2--accesos-header-title">
+                                    <h3>Cómo pertenecer al programa</h3>
+                                </div>
+                            </div>
+                            <div class="main__sec-2--accesos-info">
+                                <p class="main__sec-2--accesos-info-text">
+                                    Conoce los requerimientos mínimos para que accedas a los beneficios que ofrece Avianca Corporate. 
+                                </p>
+                                
+                                <div class="main__sec-2--accesos-info-link">
+                                    <a href="#">Conoce más del programa 
+                                        <span><img src="./assets/images/arrow-2.svg" alt="arrow"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="line"></div>
+
+                        <div class="main__sec-2--accesos">
+                            <div class="main__sec-2--accesos-header">
+                                <div class="main__sec-2--accesos-header-icon">
+                                    <span><img src="./assets/images/start.svg" alt="start"></span>
+                                </div>
+                                <div class="main__sec-2--accesos-header-title">
+                                    <h3>Obtenga su contraseña web</h3>
+                                </div>
+                            </div>
+                            <div class="main__sec-2--accesos-info">
+                                <p class="main__sec-2--accesos-info-text">
+                                    Si aún no recibe su contraseña, o la olvidó, la puede solicitar de nuevo aquí. 
+                                </p>
+                                
+                                <div class="main__sec-2--accesos-info-link">
+                                    <a href="#">Solicitar contraseña 
+                                        <span><img src="./assets/images/arrow-2.svg" alt="arrow"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Section 3: Tener en cuenta -->
+                <section class="main__sec3">
+                    <h2 class="main__sec3--title">Ten en cuenta</h2>
+
+                    <div class="main__sec3--grid">
+                        <div class="main__sec3--grid-dialog dialog--a">
+                            <h3 class="main__sec3--grid-dialog-title">Restricciones de Viajes</h3>
+                            <p class="main__sec3--grid-dialog-text">Revisa si tu destino tiene restricciones de viaje o exigencias de Pruebas de Covid-19, que pueden impactar tu viaje.</p>
+                            <button class="btn--white">Conocer las restricciones de viajes</button>
+                        </div>
+                        <div class="main__sec3--grid-dialog dialog--b">
+                            <h3 class="main__sec3--grid-dialog-title">Habla con un Ejecutivo Comercial</h3>
+                            <p class="main__sec3--grid-dialog-text">Si ya tienes tienes una Cuenta Corporativa, puedes hablar directamente con nuestros Ejecutivos Comerciales.</p>
+                            <button class="btn--white">Conocer las restricciones de viajes</button>
+                        </div>
+                        <div class="main__sec3--grid-dialog dialog--c">
+                            <h3 class="main__sec3--grid-dialog-title">Prueba PCR (Covid-19) incluida en tu tarifa</h3>
+                            <p class="main__sec3--grid-dialog-text">Si uno de los destinos a los que viajes exige una prueba PCR para el Covid-19, nosotros te hacemos la vida más fácil. Nos aliamos con SynLab para que viajes tranquilo, descubre todos los beneficios que trae tu talla. </p>
+                            <button class="btn--white">Conoce los detalles de la Prueba PCR</button>
+                        </div>
+                    </div>
+                </section>
+         </main>
+
+         <!-- Footer -->
+        <footer class="footer">
+
+            <div class="footer__container-1">
+                <div class="footer__row-1">
+                    <div class="footer__avianca">
+                        <h3 class="footer__avianca--title">Avianca Corporate</h3>
+                        <ul class="footer__avianca--list">
+                            <li class="footer__avianca--list-i"><a href="#">El programa Corporate</a></li>
+                            <li class="footer__avianca--list-i"><a href="#">Inscripción</a></li>
+                            <li class="footer__avianca--list-i"><a href="#">Otras soluciones empresariales</a></li>
+                            <li class="footer__avianca--list-i"><a href="#">Direct Connect</a></li>
+                            <li class="footer__avianca--list-i"><a href="#">Servicios de viaje</a></li>
+                            <li class="footer__avianca--list-i"><a href="#">Cómo pertenecer al programa</a></li>
+                            <li class="footer__avianca--list-i"><a href="#">Obtenga su contraseña web</a></li>
+                            <li class="footer__avianca--list-i"><a href="#">Solicite su PIN</a></li>
+                        </ul>
+                    </div>
+        
+                    <div class="footer__conocenos">
+                        <h3 class="footer__avianca--title">Conócenos</h3>
+                        <ul class="footer__avianca--list">
+                            <li class="footer__avianca--list-i"><a href="#">Sobre nosotros</a></li>
+                            <li class="footer__avianca--list-i"><a href="#">Contáctanos</a></li>
+                            <li class="footer__avianca--list-i"><a href="#">Alianzas y beneficios</a></li>
+                            <li class="footer__avianca--list-i"><a href="#">Direct Connect</a></li>
+                            <li class="footer__avianca--list-i"><a href="#">Nuestra red de servicios</a></li>
+                            <li class="footer__avianca--list-i"><a href="#">Relación con inversionistas</a></li>
+                            <li class="footer__avianca--list-i"><a href="#">Mapa del sitio</a></li>
+                            <li class="footer__avianca--list-i"><a href="#">Avianca Express</a></li>
+                        </ul>
+                    </div>
+        
+                    <div class="footer__legales">
+                        <h3 class="footer__avianca--title">Legales</h3>
+                        <ul class="footer__avianca--list">
+                            <li class="footer__avianca--list-i"><a href="#">Términos y condiciones</a></li>
+                            <li class="footer__avianca--list-i"><a href="#">Política de privacidad</a></li>
+                            <li class="footer__avianca--list-i"><a href="#">Politica de cookies</a></li>
+                            <li class="footer__avianca--list-i"><a href="#">Cargos por servicios opcionales</a></li>
+                            <li class="footer__avianca--list-i"><a href="#">Contrato de transporte</a></li>
+                            <li class="footer__avianca--list-i"><a href="#">Plan de contingencia</a></li>    
+                        </ul>
+                    </div>
+    
+                </div>
+            </div>
+
+            <div class="footer__container-2">
+                <h3 class="footer__avianca--title">Síguenos</h3>
+                <div class="footer__row-2">
+                    <div class="footer__row-2--social">
+                        <a href="#"><img src="./assets/images/Twitter.png" alt="Twitter"><span>Twitter</span> </a>
+                        <a href="#"><img src="./assets/images/Facebook.png" alt="Facebook"><span> Facebook</span></a>
+                        <a href="#"><img src="./assets/images/Youtube.png" alt="Youtube"><span>Youtube</span> </a>
+                        <a href="#"><img src="./assets/images/Instagram.png" alt="Instagram"><span>Instagram</span></a>
+                    </div>
+                    <div class="line-2"></div>
+                    <div class="footer__row-2--companies">
+                        <a href="#"><img src="./assets/images/logo-3.svg" alt="sitio seguro"></a>
+                        <a href="#"><img src="./assets/images/logo-1.svg" alt="super transporte"></a>
+                        <a href="#"><img src="./assets/images/logo-2.svg" alt="aeronautica civil"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="line-3"></div>
+
+            <div class="footer__container-3">
+                <div class="footer__container-3--logos">
+                    <a href="#"><img src="./assets/images/logo-avianca.png" alt="avianca logo"></a>
+                    <a href="#"><img src="./assets/images/Logo start alliance.png" alt="start alliance"></a>
+                </div>
+                <div class="footer__container-3--rights">
+                    <p class="footer__container-3--rights-text">Avianca S.A. - 2020 Copyright © Todos los derechos reservados. NIT 890.100.577-6. RNT 20175</p>
+                </div>
+            </div>
+         </footer>
+    </div>
+</body>
+</html>
