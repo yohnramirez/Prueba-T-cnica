@@ -490,16 +490,6 @@ a{
                 margin: 0 0 15px 0;
             }
         }
-
-        .dialog--a{
-            grid-area: a;
-        }
-        .dialog--b{
-            grid-area: b;
-        }
-        .dialog--c{
-            grid-area: c;
-        }
     }
 }
 
@@ -557,10 +547,10 @@ a{
 
             .footer__row-2--companies{
                 display: flex;
-                flex-wrap: wrap;
                 align-items: center;
                 justify-content: center;
-                gap: 60px;
+                flex-direction: row;
+                gap: 50px;
             }
         }
     }
@@ -740,7 +730,6 @@ a{
             .line{
                 display: none;
             }
-
         }
     }
     
@@ -777,6 +766,7 @@ a{
                 }
 
                 .footer__row-2--companies{
+                    flex-wrap: wrap;
                     justify-content: start;
                     gap: 10px;
                 }
@@ -802,9 +792,6 @@ a{
 
                 .header__banner--caption-title{
                     font-weight: 900;
-                }
-
-                .header__banner--caption-text{
                 }
 
                 .btn--red{

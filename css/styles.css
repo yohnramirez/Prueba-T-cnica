@@ -631,25 +631,6 @@ a {
   margin: 0 0 15px 0;
 }
 
-.main__sec3 .main__sec3--grid .dialog--a {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: a;
-}
-
-.main__sec3 .main__sec3--grid .dialog--b {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: b;
-}
-
-.main__sec3 .main__sec3--grid .dialog--c {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-area: c;
-}
-
 /* --------------------- Footer ---------------------*/
 .footer {
   background-color: #FAFAFA;
@@ -734,15 +715,17 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 60px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 50px;
 }
 
 .footer .footer__avianca--title {
@@ -958,6 +941,8 @@ a {
     display: none;
   }
   .footer .footer__container-2 .footer__row-2 .footer__row-2--companies {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: start;
